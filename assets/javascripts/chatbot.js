@@ -3,7 +3,7 @@
     const response = await axios(
         {
             method: 'post',
-            url: '/php-virtual-booth/routes/get-user',
+            url: '/routes/get-user',
         }
     );
 

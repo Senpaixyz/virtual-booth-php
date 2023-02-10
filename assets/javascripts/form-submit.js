@@ -48,7 +48,7 @@ function raiseSuccess(message){
     messageContainer.innerHTML = successTemplate;
 
     let timeout = setTimeout(function(){
-        window.location.href = '/php-virtual-booth/booths';
+        window.location.href = '/booths';
         clearTimeout(timeout);
     },1000);
 
@@ -93,7 +93,7 @@ form.addEventListener('submit',function(e){
     axios(
         {
             method: 'post',
-            url: '/php-virtual-booth/routes/create',
+            url: '/routes/create',
             data: {data},
         }
     )

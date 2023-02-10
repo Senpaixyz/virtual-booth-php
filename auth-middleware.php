@@ -40,7 +40,7 @@ else{
 
 
 if($redirect){
-  header('Location: /php-virtual-booth/');  
+  header('Location: /');  
   exit;
 }
 
