@@ -3,7 +3,7 @@
 $HOST = "localhost";
 $USER = "bernardpaulo";
 $PASSWORD = "Analyst!@#$1234";
-$DB = "virtual-booth";
+$DB = "virtual-booth";;
 
 function get_records($table) {
     global $HOST ;
