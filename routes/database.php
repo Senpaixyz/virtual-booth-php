@@ -1,8 +1,8 @@
 <?php
 
 $HOST = "localhost";
-$USER = "root";
-$PASSWORD = "";
+$USER = "bernardpaulo";
+$PASSWORD = "Analyst!@#$1234";
 $DB = "virtual-booth";
 
 function get_records($table) {
