@@ -2,6 +2,11 @@ const form = document.querySelector('form');
 const formSubmit = document.querySelector("#form-submit");
 const messageContainer = document.querySelector("#message-container");
 const errorTimeout = 2000;
+
+var pathArray = window.location.pathname.split( '/' );
+pathArray.pop();
+var absolutePath = window.location.protocol + '//' + window.location.host + pathArray.join('/');
+
 function raiseError(message,reconnectingStatus=false){
     const errorTemplate =  `
      <span id="danger-alert" class="flex p-4 mx-4 mb-4 text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
@@ -48,7 +53,7 @@ function raiseSuccess(message){
     messageContainer.innerHTML = successTemplate;
 
     let timeout = setTimeout(function(){
-        window.location.href = '/booths';
+        window.location.href = `${absolutePath}/booths`;
         clearTimeout(timeout);
     },1000);
 
@@ -93,7 +98,7 @@ form.addEventListener('submit',function(e){
     axios(
         {
             method: 'post',
-            url: '/routes/create',
+            url: `${absolutePath}/routes/create`,
             data: {data},
         }
     )

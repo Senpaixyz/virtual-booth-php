@@ -1,9 +1,11 @@
 (async () => {
-
+    var pathArray = window.location.pathname.split( '/' );
+    pathArray.pop();
+    var absolutePath = window.location.protocol + '//' + window.location.host + pathArray.join('/');
     const response = await axios(
         {
             method: 'post',
-            url: '/routes/get-user',
+            url: `${absolutePath}/routes/get-user`,
         }
     );
 

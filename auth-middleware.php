@@ -1,8 +1,9 @@
 <?php
 
+
 require_once 'auth.php';
 require_once 'routes/database.php';
-
+require_once 'operation.php';
 
 $keyManager = new KeyManager('secret');
 $jwtAuth = new JwtAuth($keyManager);
@@ -44,7 +45,7 @@ else{
 
 
 if($redirect){
-  header('Location: /');  
+  header('Location: '.getParentUrl());  
   exit;
 }
 
