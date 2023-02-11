@@ -8,11 +8,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   require_once 'database.php';
 
   $credentials = [
-      'host'      => $HOST,
-      'user'      => $USER,
-      'password'  => $PASSWORD,
-      'db'        =>  $DB
+      'host'      => "localhost",
+      'user'      => "bernard",
+      'password'  => "n#janb85zxG0",
+      'db'        => "virtual-booth"
   ];
+
 
   $userEmailExists = get_record_by_email("users",$credentials,$email)[0];
 

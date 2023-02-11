@@ -4,10 +4,10 @@ require_once 'database.php';
 require_once '../auth.php';
 
 $credentials = [
-    'host'      => $HOST,
-    'user'      => $USER,
-    'password'  => $PASSWORD,
-    'db'        =>  $DB
+    'host'      => "localhost",
+    'user'      => "bernard",
+    'password'  => "n#janb85zxG0",
+    'db'        => "virtual-booth"
 ];
 
 
