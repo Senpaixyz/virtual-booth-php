@@ -9,32 +9,34 @@ header("Expires: 0"); // Proxies
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="icon" href="./assets/images/Sandoz-Logo-NEW-BLUE-2023.png" type="image/x-icon">
-    <link rel="shortcut icon"  href="./assets/images/Sandoz-Logo-NEW-BLUE-2023.png"  type="image/x-icon">
-    <title>Virtual Booth</title>
-    <meta name="description" content="Lorem ipsum dolor sit amet, consectetueradipiscing elit. Aenean commodo ligula
-                eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes
-                , nascetur ridiculus mus. Donec quam felis.">
+
+    <title>SANDOZ CARDIO AND METABOLIC CARE | Virtual Booth</title>
+    <meta name="description" content="Lorem ipsum dolor sit amet, consectetueradipiscing elit. Aenean commodo ligulaeget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.">
+
+    <link rel="icon" href="./assets/images/favicon_io/android-chrome-512x512.png" type="image/x-icon">
+    <link rel="shortcut icon"  href="./assets/images/favicon_io/android-chrome-512x512.png"  type="image/x-icon">
+
+    <link rel="android-chrome" sizes="192x192" href="./assets/images/favicon_io/android-chrome-192x192.png"/>
+    <link rel="android-chrome" sizes="512x512" href="./assets/images/favicon_io/android-chrome-512x512.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./assets/images/favicon_io/site.webmanifest">
 
 
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:site" content="@loremIpsum"/>
-    <meta name="twitter:creator" content="@loremIpsum"/>
-    <meta name="twitter:title" content="Lorem ipsum dolor sit amet, consectetueradipiscing elit. Aenean commodo ligula"/>
-    <meta name="twitter:description" content="Lorem ipsum dolor sit amet, consectetueradipiscing elit. Aenean commodo ligula 
-    eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes
-    , nascetur ridiculus mus."/>
-    <meta name="twitter:image" content="./assets/images/Sandoz-Logo-NEW-BLUE-2023.png"/>
+    <meta property="twitter:title" content="SANDOZ CARDIO AND METABOLIC CARE | VIRTUAL BOOTH">
+    <meta property="twitter:site_name" content="lifegetsbetterwithsandoz.com">
+    <meta property="twitter:url" content="https://lifegetsbetterwithsandoz.com/">
+    <meta property="twitter:description" content="Lorem ipsum dolor sit amet, consectetueradipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.">
+    <meta property="twitter:type" content="website">
+    <meta property="twitter:image" content="./assets/images/favicon.png">
 
-
-    <meta property="og:url"                content="https://www.covidnearme.org/" />
-    <meta property="og:type"               content="website" />
-    <meta property="og:locale"             content="en_US">
-    <meta property="og:title"              content="Lorem ipsum dolor sit amet, consectetueradipiscing elit. Aenean commodo ligula" />
-    <meta property="og:description"        content="Lorem ipsum dolor sit amet, consectetueradipiscing elit. Aenean commodo ligula 
-    eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes
-    , nascetur ridiculus mus." />
-    <meta property="og:image"              content="./assets/images/Sandoz-Logo-NEW-BLUE-2023.png" />
+    <meta property="og:title" content="SANDOZ CARDIO AND METABOLIC CARE | VIRTUAL BOOTH">
+    <meta property="og:site_name" content="lifegetsbetterwithsandoz.com">
+    <meta property="og:url" content="https://lifegetsbetterwithsandoz.com/">
+    <meta property="og:description" content="Lorem ipsum dolor sit amet, consectetueradipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./assets/images/favicon.png">
 
 
     <link

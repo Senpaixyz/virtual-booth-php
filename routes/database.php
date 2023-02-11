@@ -15,7 +15,12 @@ function get_records($table,$cred) {
 
     $query = "SELECT * FROM $table";
     $result = mysqli_query($conn, $query);
-    return mysqli_fetch_all($result, MYSQLI_ASSOC);
+    $data = array();
+    while ($row = $result->fetch_assoc()) {
+        $data[] = $row;
+    }
+    return $data;
+    // return mysqli_fetch_all($result, MYSQLI_ASSOC);
 }
 
 function get_record_by_email($table,$cred, $email) {
