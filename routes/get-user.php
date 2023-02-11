@@ -4,7 +4,6 @@
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   require_once '../auth-middleware.php';
-  require_once "config.php";
   require_once 'database.php';
 
   $credentials = [
