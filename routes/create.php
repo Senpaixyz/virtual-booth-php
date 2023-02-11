@@ -1,7 +1,15 @@
 <?php
-
+require_once "config.php";
 require_once 'database.php';
 require_once '../auth.php';
+
+$credentials = [
+    'host'      => $HOST,
+    'user'      => $USER,
+    'password'  => $PASSWORD,
+    'db'        =>  $DB
+];
+
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $request_body = file_get_contents('php://input');
@@ -11,7 +19,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $dataObject = (object)$data;
 
-        $userEmailExists = get_record_by_email("users",$dataObject->email);
+
+        $userEmailExists = get_record_by_email("users",$credentials,$dataObject->email);
 
         if(!empty($userEmailExists)){
 
@@ -21,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             ]);
         }
         else{
-            $result = create_record("users", $data);
+            $result = create_record("users",$credentials, $data);
 
 
 

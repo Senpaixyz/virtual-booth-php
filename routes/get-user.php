@@ -4,10 +4,17 @@
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   require_once '../auth-middleware.php';
-
+  require_once "config.php";
   require_once 'database.php';
 
-  $userEmailExists = get_record_by_email("users",$email)[0];
+  $credentials = [
+      'host'      => $HOST,
+      'user'      => $USER,
+      'password'  => $PASSWORD,
+      'db'        =>  $DB
+  ];
+
+  $userEmailExists = get_record_by_email("users",$credentials,$email)[0];
 
   echo json_encode([
     'status'    => 'success',
@@ -18,6 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   update_record(
       "users",
+      $credentials,
       $email,
       ["first_logged" => 0],
   );
