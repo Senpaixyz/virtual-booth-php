@@ -4,7 +4,9 @@ require_once 'auth.php';
 require_once 'routes/database.php';
 
 
-$jwtAuth = new JwtAuth();
+$keyManager = new KeyManager('secret');
+$jwtAuth = new JwtAuth($keyManager);
+
 $redirect = false;
 
 
@@ -16,6 +18,8 @@ if(isset($_COOKIE['token'])) {
   $token = $_COOKIE['token'];
 
   $decoded = $jwtAuth->decode($token);
+
+
   if ($decoded) {
       $data = (object)json_decode(json_encode($decoded));
 

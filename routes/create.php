@@ -31,10 +31,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 "iat" => time()
             ];
     
-            $jwtAuth = new JwtAuth();
+            $keyManager = new KeyManager('secret');
+            $jwtAuth = new JwtAuth($keyManager);
+
+            
     
             $token = $jwtAuth->encode($payload);
-    
+
+
             echo json_encode([
                 'status'    => 'success',
                 'message'   => 'Data Inserted',
