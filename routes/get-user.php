@@ -9,8 +9,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   $credentials = [
       'host'      => "localhost",
-      'user'      => "bernard",
-      'password'  => "n#janb85zxG0",
+      'user'      => "bernardpaulo",
+      'password'  => "GrpEh4QkCggJTDc",
       'db'        => "virtual-booth"
   ];
 
