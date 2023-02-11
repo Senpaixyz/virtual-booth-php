@@ -12,7 +12,7 @@ function get_records($table,$cred) {
     if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
     }
-    
+
     $query = "SELECT * FROM $table";
     $result = mysqli_query($conn, $query);
     return mysqli_fetch_all($result, MYSQLI_ASSOC);
@@ -32,7 +32,14 @@ function get_record_by_email($table,$cred, $email) {
     }
     $query = "SELECT * FROM $table WHERE email='$email'";
     $result = mysqli_query($conn, $query);
-    return mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+    $data = array();
+    while ($row = $result->fetch_assoc()) {
+        $data[] = $row;
+    }
+    return $data;
+
+    // return mysqli_fetch_all($result, MYSQLI_ASSOC);
 }
 
 function create_record($table,$cred, $data) {
