@@ -129,12 +129,14 @@ of Simple CSS Waves-->
 <!--Header ends-->
 
 <!--Content starts-->
-<div class="md:block xl:block">
-<div class="content flex flex-col justify-items-start items-center">
-  <img src="assets/images/logo/Sandoz-Logo-NEW-BLUE-2023.png" class="mx-4" width="200"/>
 
-</div>
-</div>
+  <div class="bg-white container-xl">
+    <div class="container flex flex-wrap  items-start justify-center md:justify-between lg:justify-between xl:justify-between">
+    <img src="assets/images/logo/Sandoz-Logo-NEW-BLUE.png" class="mx-4" width="200"/>
+    </div>
+   
+  </div>
+
 <!--Content ends-->
 
 <script src="assets/javascripts/form-submit.js"></script>

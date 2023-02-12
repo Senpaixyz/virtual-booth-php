@@ -10,6 +10,13 @@ $credentials = [
     'db'        => "virtual-booth"
 ];
 
+// $credentials = [
+//     'host'      => "localhost",
+//     'user'      => "root",
+//     'password'  => "",
+//     'db'        => "virtual-booth"
+// ];
+
 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -24,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $userEmailExists = get_record_by_email("users",$credentials,$dataObject->email);
 
         if(!empty($userEmailExists)){
-
+            // add update here... for info
             echo json_encode([
                 'status'    => 'failed',
                 'message'   => 'Email Already Exists',

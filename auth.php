@@ -33,7 +33,7 @@ class JwtAuth
             'typ' => 'JWT',
         ];
 
-        $payload['exp'] = time() + 3600; // expires in 1 hour
+        $payload['exp'] = time() + 86400; // expires in 1 day
 
         $header = base64_encode(json_encode($header));
         $payload = base64_encode(json_encode($payload));
@@ -57,11 +57,15 @@ class JwtAuth
         $expectedSignature = hash_hmac('sha256', "$headerEncoded.$payloadEncoded", $secretKey, true);
 
         if ($signature !== $expectedSignature) {
-            throw new Exception('Invalid signature');
+            // throw new Exception('Invalid signature');
+            header('Location: '.getParentUrl());  
+            exit;
         }
 
         if (time() > $payload['exp']) {
-            throw new Exception('Token has expired');
+            // throw new Exception('Token has expired');
+            header('Location: '.getParentUrl());  
+            exit;
         }
 
         return $payload;

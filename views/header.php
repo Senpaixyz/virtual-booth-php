@@ -4,7 +4,7 @@ header("Pragma: no-cache"); // HTTP 1.0
 header("Expires: 0"); // Proxies
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns='http://www.w3.org/1999/xhtml'>
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,14 +29,14 @@ header("Expires: 0"); // Proxies
     <meta property="twitter:url" content="https://lifegetsbetterwithsandoz.com/">
     <meta property="twitter:description" content="Lorem ipsum dolor sit amet, consectetueradipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.">
     <meta property="twitter:type" content="website">
-    <meta property="twitter:image" content="./assets/images/favicon.png">
+    <meta property="twitter:image" content="./assets/images/favicon.jpg">
 
     <meta property="og:title" content="SANDOZ CARDIO AND METABOLIC CARE | VIRTUAL BOOTH">
     <meta property="og:site_name" content="lifegetsbetterwithsandoz.com">
     <meta property="og:url" content="https://lifegetsbetterwithsandoz.com/">
     <meta property="og:description" content="Lorem ipsum dolor sit amet, consectetueradipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="./assets/images/favicon.png">
+    <meta property="og:image" content="./assets/images/favicon.jpg">
 
 
     <link
@@ -46,7 +46,10 @@ header("Expires: 0"); // Proxies
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css"  rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
 
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+
     <title>Virtual Booth</title>
 </head>
-
+<!-- oncontextmenu="return false;" -->
 <body class="bg-white dark:bg-gray-900">

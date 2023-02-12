@@ -7,7 +7,7 @@
         © 2023 Sandoz Philippines Corporation. All rights reserved. <br/>
         5th & 6th Floor, Ayala North Exchange Tower 1, Ayala Avenue corner Salcedo and Amorsolo Streets, Barangay San Lorenzo, Makati City +63 2 3687098
         </span>
-        <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+        <ul class="flex flex-wrap items-center  mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
 
             <li>
                 <a href="#" class="hover:underline">PROMAT CODE</a>
@@ -23,6 +23,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
 <script src="./assets/javascripts/theme-toggle.js"></script>
 <script src="./assets/javascripts/chatbot.js" async></script>
+<script src="./assets/javascripts/get-records.js" async></script>
 <script src="//code.tidio.co/fewor8budcej77h3dwmhohvszuxuewd4.js" async></script>
 </body>
 </html>

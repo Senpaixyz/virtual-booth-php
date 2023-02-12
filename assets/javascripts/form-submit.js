@@ -53,7 +53,7 @@ function raiseSuccess(message){
     messageContainer.innerHTML = successTemplate;
 
     let timeout = setTimeout(function(){
-        window.location.href = `${absolutePath}/booths`;
+        window.location.href = `${absolutePath}/virtual-booth`;
         clearTimeout(timeout);
     },1000);
 

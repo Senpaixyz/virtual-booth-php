@@ -13,6 +13,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       'db'        => "virtual-booth"
   ];
 
+  // $credentials = [
+  //     'host'      => "localhost",
+  //     'user'      => "root",
+  //     'password'  => "",
+  //     'db'        => "virtual-booth"
+  // ];
 
   $userEmailExists = get_record_by_email("users",$credentials,$email)[0];
 
