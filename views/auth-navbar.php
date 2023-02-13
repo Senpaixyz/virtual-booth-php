@@ -4,7 +4,7 @@
         class="flex items-center   
         fixed md:static lg:static xl:static
         invisible md:visible lg:visible xl:visible">
-            <img src="./assets/images/logo/white-Here-Comes-the-Power-Logo.png" class="w-72 mt-3  lg:w-72 xl:w-72  mx-1"/>
+            <img src="./assets/images/logo/white-Here-Comes-the-Power-Logo.png" class="w-72 mt-3  lg:w-72 xl:w-72  mx-1 here-comes-power-logo"/>
             <!-- <img src="./assets/images/logo/Here-Comes-the-Power-Logo.png" class="w-72 mt-3  lg:w-72 xl:w-72  mx-1 block dark:hidden"/> -->
         </a>
 
@@ -99,7 +99,7 @@
             </div> -->
 
             <div class="block md:hidden lg:hidden xl:hidden flex flex-row justify-center mt-2">
-                <img src="./assets/images/logo/white-Here-Comes-the-Power-Logo.png" class="w-4/5 mx-1"/>
+                <img src="./assets/images/logo/white-Here-Comes-the-Power-Logo.png" class="w-4/5 mx-1 here-comes-power-logo"/>
             </div>
       
       

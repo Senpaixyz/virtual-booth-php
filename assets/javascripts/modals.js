@@ -23,6 +23,7 @@ $(document).click(function(event) {
   ){
     keyshotxrID.find('#backbuffer').removeClass('blurd-background-filter');
     $("#panel-solo-video-modal.modal-video-large").html(''); // empty video player;;
+    $(".missing-r-logo").hide(); // hide r;
     // $(".mobile-viewport-video-player").trigger('pause'); // whenever theres event in booth just pause or videos
   }
 
@@ -47,7 +48,23 @@ $(document).on('click','.panel-images-sm',function(){
       $(".panel-image-large").attr('src',src);
       $("#panel-solo-modal.modal-large").addClass('visible');
 
+      const isShowR = $(this).hasClass('show-r-logo');
+
+      if(isShowR){
+        console.log('SHOWING  R')
+        $(".missing-r-logo").show();
+      }
+      else{
+        $(".missing-r-logo").hide();
+      }
       $("body").find(".modal").removeClass("visible");
+});
+
+
+$(document).on('click','.close-panel-image',function(){
+  keyshotxrID.find('#backbuffer').removeClass('blurd-background-filter');
+  $("#panel-solo-video-modal.modal-video-large").html(''); // empty video player;;
+  $("body").find(".modal-large").removeClass("visible");
 });
 
 

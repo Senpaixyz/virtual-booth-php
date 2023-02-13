@@ -18,24 +18,24 @@
               var viewPortWidth = 1366;
               var viewPortHeight = mobileHeight;
               var backgroundColor = "";
-              var uCount = 1;
+              var uCount = 225;
               var vCount = 1;
               var uWrap = true;
               var vWrap = false;
               var uMouseSensitivity = -0.05;
               var vMouseSensitivity = 1;
-              var uStartIndex = 0;
+              var uStartIndex = 112;
               var vStartIndex = 0;
               var minZoom = 1;
               var maxZoom = 1;
-              var rotationDamping = 0.96;
+              var rotationDamping = 0.98; // 0.96
               var downScaleToBrowser = true;
               var addDownScaleGUIButton = false;
               var downloadOnInteraction = false;
               var imageExtension = "jpg";
               var showLoading = false;
               var loadingIcon = ""; // Set to empty string for default icon.
-              var allowFullscreen = false; // Double-click in desktop browsers for fullscreen.
+              var allowFullscreen = true; // Double-click in desktop browsers for fullscreen.
               var uReverse = false;
               var vReverse = false;
               var hotspots = {};
@@ -58,7 +58,7 @@
 
 
         let mobileHeight = 737;
-        if(window.matchMedia("(max-width: 767px)").matches){
+        if(window.matchMedia("(max-width: 768px)").matches){
             mobileHeight = 300;
         }
         console.log("MOBILE VIEWPORT: ", mobileHeight);

@@ -14,8 +14,8 @@ of Simple CSS Waves-->
 
 
       <div class="mx-0 sm:mx-auto md:mx-auto xl:mx-auto max-w-xl">
-            <img src="assets/images/logo/white-Here-Comes-the-Power-Logo.png" class="w-100"/>
-            <p class="px-6 text-left text-lg font-semibold text-white" style="font-size: 1.18rem">Management of Cardiovascular Symptoms and Conditions</p>
+            <img src="assets/images/logo/Here-Comes-the-Power-Logo With Addition.png" class="w-100"/>
+            <!-- <p class="px-6 text-left text-lg font-semibold text-white" style="font-size: 1.18rem">Management of Cardiovascular Symptoms and Conditions</p> -->
             <p class="px-6 text-left text-md mt-4 text-white">To register, please take the time to fill out the information below</p>
             <div class="p-6  leading-normal   ">
 
