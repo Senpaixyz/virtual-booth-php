@@ -23,6 +23,7 @@ $(document).click(function(event) {
   ){
     keyshotxrID.find('#backbuffer').removeClass('blurd-background-filter');
     $("#panel-solo-video-modal.modal-video-large").html(''); // empty video player;;
+    // $(".mobile-viewport-video-player").trigger('pause'); // whenever theres event in booth just pause or videos
   }
 
 

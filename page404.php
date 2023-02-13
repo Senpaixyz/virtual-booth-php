@@ -34,4 +34,4 @@ require_once 'operation.php';
 
 
 
-<?php include 'views/footer.php';?>
+<?php include 'views/not-auth-footer.php';?>

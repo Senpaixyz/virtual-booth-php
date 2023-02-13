@@ -3,12 +3,12 @@
 require_once 'database.php';
 require_once '../auth.php';
 
-$credentials = [
-    'host'      => "localhost",
-    'user'      => "bernardpaulo",
-    'password'  => "GrpEh4QkCggJTDc",
-    'db'        => "virtual-booth"
-];
+    $credentials = [
+        'host'      => "localhost",
+        'user'      => "bernardpaulo",
+        'password'  => "GrpEh4QkCggJTDc",
+        'db'        => "virtual-booth"
+    ];
 
 // $credentials = [
 //     'host'      => "localhost",
@@ -27,41 +27,64 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $dataObject = (object)$data;
 
+        $result = create_record("users",$credentials, $data);
 
-        $userEmailExists = get_record_by_email("users",$credentials,$dataObject->email);
+        $payload = [
+            "name" => $dataObject->first_name . ' ' . $dataObject->last_name, // first_name and last_name
+            "email" => $dataObject->email, // email
+            "iat" => time() 
+        ];
 
-        if(!empty($userEmailExists)){
-            // add update here... for info
-            echo json_encode([
-                'status'    => 'failed',
-                'message'   => 'Email Already Exists',
-            ]);
-        }
-        else{
-            $result = create_record("users",$credentials, $data);
+        $keyManager = new KeyManager('secret');
+        $jwtAuth = new JwtAuth($keyManager);
+
+        
+
+        $token = $jwtAuth->encode($payload);
+
+
+        echo json_encode([
+            'status'    => 'success',
+            'message'   => 'Data Inserted',
+            'token'     => $token
+        ]);
+
+
+        // $userEmailExists = get_record_by_email("users",$credentials,$dataObject->email);
+
+
+        // if(!empty($userEmailExists)){
+        //     // add update here... for info
+        //     echo json_encode([
+        //         'status'    => 'failed',
+        //         'message'   => 'Email Already Exists',
+        //     ]);
+        // }
+        // else{
+        //     $result = create_record("users",$credentials, $data);
 
 
 
-            $payload = [
-                "name" => $dataObject->first_name . ' ' . $dataObject->last_name, // first_name and last_name
-                "email" => $dataObject->email, // email
-                "iat" => time()
-            ];
+        //     $payload = [
+        //         "name" => $dataObject->first_name . ' ' . $dataObject->last_name, // first_name and last_name
+        //         "email" => $dataObject->email, // email
+        //         "iat" => time()
+        //     ];
     
-            $keyManager = new KeyManager('secret');
-            $jwtAuth = new JwtAuth($keyManager);
+        //     $keyManager = new KeyManager('secret');
+        //     $jwtAuth = new JwtAuth($keyManager);
 
             
     
-            $token = $jwtAuth->encode($payload);
+        //     $token = $jwtAuth->encode($payload);
 
 
-            echo json_encode([
-                'status'    => 'success',
-                'message'   => 'Data Inserted',
-                'token'     => $token
-            ]);
-        }
+        //     echo json_encode([
+        //         'status'    => 'success',
+        //         'message'   => 'Data Inserted',
+        //         'token'     => $token
+        //     ]);
+        // }
 
 
     }

@@ -14,8 +14,8 @@ of Simple CSS Waves-->
 
 
       <div class="mx-0 sm:mx-auto md:mx-auto xl:mx-auto max-w-xl">
-            <img src="assets/images/logo/Here-Comes-the-Power-Logo.png" class="w-100"/>
-            <p class="px-6 text-left text-lg font-semibold text-white">Management of Cardiovascular Symptoms and Conditions</p>
+            <img src="assets/images/logo/white-Here-Comes-the-Power-Logo.png" class="w-100"/>
+            <p class="px-6 text-left text-lg font-semibold text-white" style="font-size: 1.18rem">Management of Cardiovascular Symptoms and Conditions</p>
             <p class="px-6 text-left text-md mt-4 text-white">To register, please take the time to fill out the information below</p>
             <div class="p-6  leading-normal   ">
 
@@ -27,7 +27,7 @@ of Simple CSS Waves-->
                         name="first_name"
                         class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
                         required>
-                <label for="first_name" class="block mb-2 text-left text-sm font-medium text-white">First Name</label>
+                <!-- <label for="first_name" class="block mb-2 text-left text-sm font-medium text-white">First Name</label> -->
               </div>
               <div class="mb-6">
 
@@ -38,22 +38,33 @@ of Simple CSS Waves-->
                         name="last_name"
                         class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
                         required>
-                <label for="last_name" class="block mb-2 text-left text-sm font-medium text-white">Last Name</label>
+                <!-- <label for="last_name" class="block mb-2 text-left text-sm font-medium text-white">Last Name</label> -->
               </div>
               <div class="mb-6">
 
-                <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="name@test.com" required>
-                <label for="email" class="block mb-2 text-left text-sm font-medium text-white">Email</label>
+                <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="name@email.com" required>
+                <!-- <label for="email" class="block mb-2 text-left text-sm font-medium text-white">Email</label> -->
               </div>
 
               <div class="mb-6 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-4 ">
                     <div>
-                      <input type="text" id="speciality" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required>
-                      <label for="speciality" class="block mb-2 text-left text-sm font-medium text-white">Speciality</label>
+                      <!-- <input type="text" id="speciality" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required> -->
+                      <!-- <label for="speciality" class="block mb-2 text-left text-sm font-medium text-white">Speciality</label> -->
+                      <select id="speciality" placeholder="Speciality" class="shadow-sm block w-full px-4 py-2 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                      <option selected disabled>Speciality</option>
+                      <option value="Family Medicine">Family Medicine</option>
+                      <option value="Gen. IM">Gen. IM</option>
+                      <option value="Nephrologist">Nephrologist</option>
+                      <option value="Diabetes">Diabetes</option>
+                      <option value="Cardiologist">Cardiologist</option>
+                      <option value="Others">Others</option>
+                      
+                    </select>
+
                     </div>
                     <div>
-                      <input type="text" id="prc" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required>
-                      <label for="prc" class="block mb-2 text-left text-sm font-medium text-white">PRC #</label>
+                      <input type="number"   pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==6) return false;" placeholder="PRC#" id="prc" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required>
+                      <!-- <label for="prc" class="block mb-2 text-left text-sm font-medium text-white">PRC #</label> -->
                     </div>
               </div>
 
@@ -63,10 +74,10 @@ of Simple CSS Waves-->
 
 
       <div class="
-             transition ease-in-out delay-150
-             bg-white  border border-gray-200 mx-4 px-4 rounded shadow dark:bg-gray-800 dark:border-gray-800
-             flex flex-col   mb-3 md:mb-1 xl:md-1 px-4 text-left
-             max-w-xl">
+              transition ease-in-out delay-150
+              bg-white  border border-gray-200 mx-4 px-4 rounded shadow dark:bg-gray-800 dark:border-gray-800
+              flex flex-col   mb-3 md:mb-1 xl:md-1 px-4 text-left
+              max-w-xl">
         <div class="w-full flex flex-col px-3 py-6 items-center justify-center">
               <p class="text-sm text-left text-dark-900 dark:text-white">
                 By clicking on the buttons below, I certify that: <br/> <br/>
@@ -84,7 +95,7 @@ of Simple CSS Waves-->
                 <div class="flex items-center h-5">
                   <input id="terms_and_condition" type="checkbox"  class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required>
                 </div>
-                <label for="terms_and_condition" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">terms and conditions</a></label>
+                <label for="terms_and_condition" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the terms and conditions</label>
               </div>
 
               <button type="submit"
@@ -130,15 +141,9 @@ of Simple CSS Waves-->
 
 <!--Content starts-->
 
-  <div class="bg-white container-xl">
-    <div class="container flex flex-wrap  items-start justify-center md:justify-between lg:justify-between xl:justify-between">
-    <img src="assets/images/logo/Sandoz-Logo-NEW-BLUE.png" class="mx-4" width="200"/>
-    </div>
-   
-  </div>
 
 <!--Content ends-->
 
 <script src="assets/javascripts/form-submit.js"></script>
 
-<?php include 'views/footer.php';?>
+<?php include 'views/not-auth-footer.php';?>
