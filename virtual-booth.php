@@ -24,7 +24,7 @@ require_once 'auth-middleware.php';
         <div class="my-3 text-left" id="mistacor-corp-video">
             <h1 class="text-md text-gray-900 dark:text-gray-300 mx-3 mb-2 font-semibold">MISTACOR AVP</h1>
             <video class="w-full h-auto max-w-full mobile-viewport-video-player" controls>
-                <source src="assets/videos/LGB wSEC.mp4" type="video/mp4">
+                <source src="assets/videos/MISTACOR MAIN AVP MASTER 120222.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
