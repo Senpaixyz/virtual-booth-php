@@ -197,7 +197,7 @@
                         />
                         <img src="./assets/images/logo/PLAS_PSH letters R.jpeg" 
                         class="w-10 mx-1 missing-r-logo" 
-                        style="margin-top: -2.7rem;margin-left:-1rem;z-index:9999;display:none;"/>
+                        style="margin-top: -2.7rem;margin-left:0rem;z-index:9999;display:none;"/>
                     </div>
                 
                 </div>
@@ -224,7 +224,7 @@
                         />
                         <img src="./assets/images/logo/PLAS_PSH letters R.jpeg" 
                         class="w-10 mx-1 missing-r-logo" 
-                        style="position:absolute;bottom:0.3rem;left:0.75rem;z-index:9999;display:none;"/>
+                        style="position:absolute;bottom:2.6rem;left:-0.55rem;z-index:9999;display:none;"/>
                
                     </div>
                     </div>
