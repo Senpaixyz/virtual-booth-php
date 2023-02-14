@@ -6,7 +6,7 @@ if (isset($_COOKIE['token'])) {
   setcookie('token', '', time() - 3600, '/'); // empty value and old timestamp
 }
 
-header('Location: '.getParentUrl(1));   // get the parent + parent folder;
+// header('Location: '.getParentUrl(1));   // get the parent + parent folder;
 exit;
 
 ?>
