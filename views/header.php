@@ -49,6 +49,9 @@ $updateVersion = "?v=".rand();
 
     <script src="./assets/javascripts/jquery-3.6.3.min.js"></script>
 
+
+    <script src="./assets/javascripts/virtual-booth-script.js<?=$updateVersion?>"></script>
+    
     <script>
         $(document).ready(function(){
             console.log('Rotation Event Listner');
@@ -71,13 +74,19 @@ $updateVersion = "?v=".rand();
                 });
             }
 
+            
+
         }
         orientationChange();
         });
+
+
+
     </script>
 
 
     <title>Virtual Booth</title>
 </head>
+
 <!-- oncontextmenu="return false;" -->
 <body class="bg-white dark:bg-gray-900">

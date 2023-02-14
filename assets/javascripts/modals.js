@@ -1,17 +1,44 @@
 const keyshotxrID = $("#KeyShotXR");
+let largeModalPanelIsOpen = false;
+
+const displayListOfPanels = function(){
+  $(`.modal`).removeClass("visible");
+  $(".modal-large").removeClass("visible");
+
+  largeModalPanelIsOpen = false;
+  keyshotxrID.find('#backbuffer').addClass('blurd-background-filter');
+  $(`#panel-modal`).addClass("visible");
+}
+
 $(document).click(function(event) {
   //if you click on anything except the modal itself or the "open modal" link, close the modal
-  if (!$(event.target).closest(".modal,.modal-button").length) {
+  if (!$(event.target).closest(".modal,.modal-button").length && !event.target.classList.contains('close-panel-image')) {
     $("body").find(".modal").removeClass("visible");
   }
 
   if (!$(event.target).closest(".modal-large,.panel-images-sm").length) {
     $("body").find(".modal-large").removeClass("visible");
   }
+  let recentlyClose = false;
+  if(
+    $(event.target).closest(".modal,.modal-button").length &&
+    $(event.target).closest(".modal-large,.panel-images-sm").length
+  )
+  {
+      console.log('Moda is Open!!');
+      largeModalPanelIsOpen = true;
+  }
+  else{
+    if(largeModalPanelIsOpen && (!$(event.target).closest(".modal-large,.panel-images-sm").length)){
+      displayListOfPanels();
+      recentlyClose = true;
+    }
+  }
 
   if (!$(event.target).closest(".modal-video-large,.panel-videos-sm").length) {
     $("body").find(".modal-video-large").removeClass("visible");
   }
+
 
   
 
@@ -19,8 +46,12 @@ $(document).click(function(event) {
   if(
     !$(event.target).closest(".modal,.modal-button").length &&
     !$(event.target).closest(".modal-large,.panel-images-sm").length &&
-    !$(event.target).closest(".modal-video-large,.panel-videos-sm").length
+    !$(event.target).closest(".modal-video-large,.panel-videos-sm").length &&
+    !recentlyClose 
   ){
+    // Set Virtual Booth Navabar tab as active
+    $(".custom-navbar-button.vb-class").trigger('click');
+  
     keyshotxrID.find('#backbuffer').removeClass('blurd-background-filter');
     $("#panel-solo-video-modal.modal-video-large").html(''); // empty video player;;
     $(".missing-r-logo").hide(); // hide r;
@@ -35,10 +66,16 @@ $(document).click(function(event) {
 $(document).on('click','.modal-button',function(){
     $(`.modal`).removeClass("visible");
     $(".modal-large").removeClass("visible");
-    keyshotxrID.find('#backbuffer').addClass('blurd-background-filter');
-
     const modalTarget = $(this).attr('data-target');
-    $(`${modalTarget}.modal`).addClass("visible");
+
+    if(modalTarget == "#virtual-booth"){
+      keyshotxrID.find('#backbuffer').removeClass('blurd-background-filter');
+    }
+    else{
+      keyshotxrID.find('#backbuffer').addClass('blurd-background-filter');
+      $(`${modalTarget}.modal`).addClass("visible");
+    }
+ 
 });
 
 
@@ -51,11 +88,9 @@ $(document).on('click','.panel-images-sm',function(){
       const isShowR = $(this).hasClass('show-r-logo');
       console.log($(this));
       if(isShowR){
-        console.log('SHOWING  R')
         $(".missing-r-logo").show();
       }
       else{
-        console.log('Hiding R');
         $(".missing-r-logo").hide();
       }
       $("body").find(".modal").removeClass("visible");
@@ -63,10 +98,12 @@ $(document).on('click','.panel-images-sm',function(){
 
 
 $(document).on('click','.close-panel-image',function(){
+  // Large Panel Close Button
   console.log('Close Button Click Success')
   keyshotxrID.find('#backbuffer').removeClass('blurd-background-filter');
   $("#panel-solo-video-modal.modal-video-large").html(''); // empty video player;;
   $("body").find(".modal-large").removeClass("visible");
+  displayListOfPanels();
 });
 
 
@@ -83,3 +120,4 @@ $(document).on('click','.panel-videos-sm',function(){
       $("#panel-solo-video-modal.modal-video-large").addClass('visible');
       $("body").find(".modal").removeClass("visible");
 });
+

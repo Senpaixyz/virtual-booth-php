@@ -9,12 +9,16 @@
         </a>
 
         <div class="flex md:order-2 justify-between w-full md:justify-end md:w-auto">
-            <p class="text-xs text-gray-900 dark:text-gray-300 mr-3">Back to PLAS-PSH 2023 Main Hall</p>
+            <a href="https://www.pshplas2023.com/virtualbooths" target="_blank" class="text-xs text-gray-900 dark:text-gray-300 mr-3">Back to PLAS-PSH 2023 Main Hall</a>
  
             <div class="flex flex-row ">
 
-                        <img src="./assets/images/logo/plas.png" class="w-10 mx-1"/>
-                        <img src="./assets/images/logo/psoh.png" class="w-10 mx-1"/>
+                        <a href="https://www.pshplas2023.com/virtualbooths" target="_blank">
+                            <img src="./assets/images/logo/plas.png" class="w-10 mx-1"/>
+                        </a>
+                        <a href="https://www.pshplas2023.com/virtualbooths" target="_blank">
+                            <img src="./assets/images/logo/psoh.png" class="w-10 mx-1"/>
+                        </a>
                         <!-- Dark mode switcher -->
                         <button
                                 data-tooltip-target="tooltip-bottom"
@@ -53,10 +57,10 @@
                             <div class="tooltip-arrow" data-popper-arrow></div>
                         </div>
 
-                        <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
+                        <!-- <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
                             <span class="sr-only">Open main menu</span>
                             <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-                        </button>
+                        </button> -->
 
                 
             </div>
@@ -89,7 +93,7 @@
         </div>
 
 
-        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+        <div class="items-center justify-between  w-full md:flex md:w-auto md:order-1 visible md:invisible lg:invisible xl:invisible">
             <!-- <div class="block md:hidden lg:hidden xl:hidden flex flex-row justify-between mt-4">
                     <p class="text-xs text-gray-900 dark:text-gray-300 mr-3">Back to PLAS-PSH 2023 Main Hall</p>
                     <div class="flex flex-row">
@@ -103,19 +107,19 @@
             </div>
       
       
-            <ul class="visible md:invisible lg:invisible xl:invisible flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-800 dark:border-gray-800">
+            <ul class=" flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-800 dark:border-gray-800">
                 <li>
-                    <a href="javascript:void(0)"  class="modal-button block py-2 pl-3 pr-4 text-gray-700  rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">VIRTUAL BOOTH</a>
+                    <a href="javascript:void(0)"  data-target="#virtual-booth" class="vb-class custom-navbar-button modal-button block py-2 pl-3 pr-4 text-gray-700  rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">VIRTUAL BOOTH</a>
                 </li>
                 <li>
-                    <a  href="javascript:void(0)" data-target="#panel-modal" class="modal-button block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">PANELS</a>
+                    <a  href="javascript:void(0)"  data-target="#panel-modal" class="pm-class custom-navbar-button modal-button panel-modal-button block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">PANELS</a>
                 </li>
                 <li>
-                    <a  href="javascript:void(0)" data-target="#sandoz-corp-video"  class="mobile-navbar-avp block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">SANDOZ CORP AVP</a>
+                    <a  href="javascript:void(0)" data-target="#sandoz-corp-video"  class="custom-navbar-button mobile-navbar-avp block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">SANDOZ CORP AVP</a>
                 </li>
 
                 <li>
-                    <a  href="javascript:void(0)" data-target="#mistacor-corp-video"  class="mobile-navbar-avp block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">MISTACOR AVP</a>
+                    <a  href="javascript:void(0)" data-target="#mistacor-corp-video"  class="custom-navbar-button mobile-navbar-avp block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">MISTACOR AVP</a>
                 </li>
  
             </ul>
@@ -132,13 +136,13 @@
     <div class="container-xxl flex flex-wrap justify-end mx-auto invisible md:visible lg:visible xl:visible fixed md:static lg:static xl:static">
         <ul class="flex  mx-5  border border-gray-100 rounded-lg bg-gray-50  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-800 dark:border-gray-800">
             <li>
-                <a href="javascript:void(0)"  class="modal-button text-lg block py-2 pl-3 pr-4 text-white  rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">VIRTUAL BOOTH</a>
+                <a href="javascript:void(0)" data-target="#virtual-booth"  class="vb-class custom-navbar-button modal-button text-lg block py-2 pl-3 pr-4 text-white  rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">VIRTUAL BOOTH</a>
             </li>
             <li>
-                <a  href="javascript:void(0)" data-target="#panel-modal" class="modal-button text-lg block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">PANELS</a>
+                <a  href="javascript:void(0)" data-target="#panel-modal" class="pm-class custom-navbar-button modal-button panel-modal-button text-lg block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">PANELS</a>
             </li>
             <li>
-                <a  href="javascript:void(0)" data-target="#panel-video-modal"  class="modal-button text-lg block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">VIDEOS</a>
+                <a  href="javascript:void(0)" data-target="#panel-video-modal"  class="custom-navbar-button modal-button text-lg block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">VIDEOS</a>
             </li>
 
         </ul>

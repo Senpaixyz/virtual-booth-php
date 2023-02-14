@@ -24,7 +24,7 @@ if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localS
     document.documentElement.classList.add('light');
 
     if(imageSource){
-        imageSource.attr('src','./assets/images/logo/Here-Comes-the-Power-Logo.png');
+        imageSource.attr('src','./assets/images/logo/Here Comes Power Colored.png');
         sandozSource.attr('src','./assets/images/logo/Sandoz-Logo-NEW-BLUE.png');
     }
 
@@ -62,7 +62,7 @@ themeToggleBtn.addEventListener('click', function() {
             localStorage.setItem('color-theme', 'light');
 
             if(imageSource){
-                imageSource.attr('src','./assets/images/logo/Here-Comes-the-Power-Logo.png');
+                imageSource.attr('src','./assets/images/logo/Here Comes Power Colored.png');
                 sandozSource.attr('src','./assets/images/logo/Sandoz-Logo-NEW-BLUE.png');
             }
 
@@ -78,7 +78,7 @@ themeToggleBtn.addEventListener('click', function() {
             localStorage.setItem('color-theme', 'light');
 
             if(imageSource){
-                imageSource.attr('src','./assets/images/logo/Here-Comes-the-Power-Logo.png');
+                imageSource.attr('src','./assets/images/logo/Here Comes Power Colored.png');
             }
             if (window.tidioChatApi) {
                 tidioChatApi.setColorPalette('#1F2937');

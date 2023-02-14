@@ -19,7 +19,7 @@
     cursor: pointer;
     z-index: 100;
     position: absolute;
-    top: 50%;
+    top: 25%;
     transform: translateY(-50%);
     opacity: 0.65;
     transition: 0.2s;
@@ -66,6 +66,10 @@
         <!-- MOBILE -->
         <div class="gap-4 flex flex-row  justify-between visible lg:invisible xl:invisible" style="position:absolute;top: 3.5rem;width:100%;">
                 <div class="swiper">
+                    <!-- <img src="./assets/images/logo/PLAS_PSH letters R.jpeg" 
+                        class="w-10 mx-1 missing-r-logo" 
+                        style="position:absolute;bottom:2.6rem;left:-0.55rem;z-index:9999;display:none;"/> -->
+               
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <a href="javascript:void(0)" >
@@ -95,6 +99,14 @@
                                 <a href="javascript:void(0)">
                                     <img 
                                     src="./assets/images/panels/Tareg 4x8 ft FA 021223.jpg" 
+                                    class="h-auto panel-images-sm panel-images-sm-md transition-all duration-300 cursor-pointer"   
+                                    /> 
+                                </a> 
+                        </div>
+                        <div class="swiper-slide">
+                                <a href="javascript:void(0)">
+                                    <img 
+                                    src="./assets/images/panels/Wosulin 4x8 ft FA 021423.jpg" 
                                     class="h-auto panel-images-sm panel-images-sm-md transition-all duration-300 cursor-pointer"   
                                     /> 
                                 </a> 
@@ -147,6 +159,9 @@
 
         <!-- DESKTOP -->
         <div class="gap-4 flex flex-row  justify-between invisible lg:visible  xl:visible " style="position:absolute;width:100%;">
+            <img src="./assets/images/logo/PLAS_PSH letters R.jpeg" 
+                        class="w-10 mx-1 missing-r-logo" 
+                        style="position:absolute;top:25%;left:20%;z-index:99999;"/>
             <a href="javascript:void(0)" >
                 <img 
                 src="./assets/images/panels/Valcamp 4x8 ft 021223.jpg" 
@@ -171,13 +186,19 @@
                 class="h-auto panel-images-sm panel-images-lg-xl transition-all duration-300 cursor-pointer"   
                 /> 
             </a>
+            <a href="javascript:void(0)">
+                <img 
+                src="./assets/images/panels/Wosulin 4x8 ft FA 021423.jpg" 
+                class="h-auto panel-images-sm panel-images-lg-xl transition-all duration-300 cursor-pointer"   
+                /> 
+            </a>
         </div>
 
 
 </div>
 
 
-<div id="panel-solo-modal" class="modal-large   p-4 overflow-x-hidden ">
+<div id="panel-solo-modal" class="modal-large p-4 overflow-x-hidden ">
         
      
         <a href="javascript:void(0)"  class="invisible md:visible lg:visible xl:visible" >
@@ -195,9 +216,9 @@
                         class="panel-images-lg panel-image-large panel-images-large-lg-xl transition-all duration-300 cursor-pointer invisible lg:visible  xl:visible"  
                         style=""
                         />
-                        <img src="./assets/images/logo/PLAS_PSH letters R.jpeg" 
+                        <!-- <img src="./assets/images/logo/PLAS_PSH letters R.jpeg" 
                         class="w-10 mx-1 missing-r-logo" 
-                        style="margin-top: -2.7rem;margin-left:0rem;z-index:9999;display:none;"/>
+                        style="margin-top: -2.7rem;margin-left:0rem;z-index:9999;display:none;"/> -->
                     </div>
                 
                 </div>
@@ -222,10 +243,10 @@
                         class="panel-images-lg panel-image-large panel-images-large-sm-md transition-all duration-300 cursor-pointer visible lg:invisible xl:invisible"  
                         style="position:absolute;right:0.25rem;top:5rem;z-index:999;"
                         />
-                        <img src="./assets/images/logo/PLAS_PSH letters R.jpeg" 
+                        <!-- <img src="./assets/images/logo/PLAS_PSH letters R.jpeg" 
                         class="w-10 mx-1 missing-r-logo" 
                         style="position:absolute;bottom:2.6rem;left:-0.55rem;z-index:9999;display:none;"/>
-               
+                -->
                     </div>
                     </div>
 
