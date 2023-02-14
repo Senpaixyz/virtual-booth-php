@@ -236,7 +236,7 @@ style="position:fixed;left:1rem;bottom:3rem;z-index:9999;display:none;"/>
 
 </div>
 
-<div id="panel-solo-video-modal" class="modal-video-large  fixed top-0 left-0 right-0 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
+<div id="panel-solo-video-modal" class="modal-video-large ">
 </div>
 
 <!-- RECORDS -->

@@ -87,7 +87,7 @@
   z-index: 999;
   /* box-sizing: border-box;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); */
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .modal-video-large video{
