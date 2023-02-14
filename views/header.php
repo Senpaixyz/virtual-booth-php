@@ -1,4 +1,9 @@
 
+<?php
+
+$updateVersion = "?v=1";
+
+?>
 <!DOCTYPE html>
 <html lang="en" xmlns='http://www.w3.org/1999/xhtml'>
 <head>
@@ -36,7 +41,7 @@
 
 
     <link
-            href="./assets/stylesheets/wave.css"
+            href="./assets/stylesheets/wave.css<?=$updateVersion?>"
             rel="stylesheet"
     />
  

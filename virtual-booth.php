@@ -5,7 +5,7 @@ require_once 'auth-middleware.php';
 <?php include 'views/header.php';?>
 <?php include 'views/auth-navbar.php';?>
 <link
-            href="./assets/stylesheets/style.css"
+            href="./assets/stylesheets/style.css<?=$updateVersion?>"
             rel="stylesheet"
     />
     
@@ -15,7 +15,7 @@ require_once 'auth-middleware.php';
 </div>
 
 
-<script src="assets/javascripts/modals.js"></script>
+<script src="assets/javascripts/modals.js<?=$updateVersion?>"></script>
 
 
 <div class="container  flex flex-col mx-auto visible md:invisible lg:invisible xl:invisible  static md:fixed lg:fixed xl:fixed">

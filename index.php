@@ -144,6 +144,6 @@ of Simple CSS Waves-->
 
 <!--Content ends-->
 
-<script src="assets/javascripts/form-submit.js"></script>
+<script src="assets/javascripts/form-submit.js<?=$updateVersion?>"></script>
 
 <?php include 'views/not-auth-footer.php';?>
