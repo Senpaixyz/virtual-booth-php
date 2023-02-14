@@ -1,8 +1,5 @@
-
 <?php
-
-$updateVersion = "?v=1";
-
+$updateVersion = "?v=".rand();
 ?>
 <!DOCTYPE html>
 <html lang="en" xmlns='http://www.w3.org/1999/xhtml'>
@@ -52,7 +49,23 @@ $updateVersion = "?v=1";
 
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 
+    <script>
+        $(document).ready(function(){
+            console.log('Rotation Event Listner');
+            function orientationChange() {
+            if(window.addEventListener) {
+                $(window).bind("orientationchange", function() {
+                    // window.alert('Rotation Event Calle!');
+                    location.reload();
+                });
 
+                
+            }
+            
+        }
+        orientationChange();
+        });
+    </script>
 
 
     <title>Virtual Booth</title>

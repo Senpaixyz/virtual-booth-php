@@ -1,5 +1,6 @@
 <?php include 'views/header.php';?>
 <?php include 'views/not-auth-navbar.php';?>
+
 <!--Hey! This is the original version
 of Simple CSS Waves-->
 
@@ -13,11 +14,11 @@ of Simple CSS Waves-->
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-2">
 
 
-      <div class="mx-0 sm:mx-auto md:mx-auto xl:mx-auto max-w-xl">
+      <div class="mx-0 md:max-w-xl lg:max-w-xl xl:max-w-xl">
             <img src="assets/images/logo/Here-Comes-the-Power-Logo With Addition.png" class="w-100"/>
             <!-- <p class="px-6 text-left text-lg font-semibold text-white" style="font-size: 1.18rem">Management of Cardiovascular Symptoms and Conditions</p> -->
-            <p class="px-6 text-left text-md mt-4 text-white">To register, please take the time to fill out the information below</p>
-            <div class="p-6  leading-normal   ">
+            <p class="px-4 sm:px-6 md:px-4 lg:px-5 xl:px-5 text-left text-md mt-4 text-white">To register, please take the time to fill out the information below</p>
+            <div class="p-4 sm:p-6 md:p-4 lg:p-5 xl:p-5  leading-normal   ">
 
               <div class="mb-6">
                 <input
@@ -42,7 +43,7 @@ of Simple CSS Waves-->
               </div>
               <div class="mb-6">
 
-                <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="name@email.com" required>
+                <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Email" required>
                 <!-- <label for="email" class="block mb-2 text-left text-sm font-medium text-white">Email</label> -->
               </div>
 
@@ -50,8 +51,8 @@ of Simple CSS Waves-->
                     <div>
                       <!-- <input type="text" id="speciality" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required> -->
                       <!-- <label for="speciality" class="block mb-2 text-left text-sm font-medium text-white">Speciality</label> -->
-                      <select id="speciality" placeholder="Speciality" class="shadow-sm block w-full px-4 py-2 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
-                      <option selected disabled>Speciality</option>
+                      <select id="speciality" placeholder="Specialty" class="shadow-sm block w-full px-4 py-2 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                      <option selected disabled>Specialty</option>
                       <option value="Family Medicine">Family Medicine</option>
                       <option value="Gen. IM">Gen. IM</option>
                       <option value="Nephrologist">Nephrologist</option>
@@ -63,7 +64,7 @@ of Simple CSS Waves-->
 
                     </div>
                     <div>
-                      <input type="number"   pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==6) return false;" placeholder="PRC#" id="prc" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required>
+                      <input type="number"   pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==9) return false;" placeholder="PRC#" id="prc" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required>
                       <!-- <label for="prc" class="block mb-2 text-left text-sm font-medium text-white">PRC #</label> -->
                     </div>
               </div>
@@ -77,7 +78,7 @@ of Simple CSS Waves-->
               transition ease-in-out delay-150
               bg-white  border border-gray-200 mx-4 px-4 rounded shadow dark:bg-gray-800 dark:border-gray-800
               flex flex-col   mb-3 md:mb-1 xl:md-1 px-4 text-left
-              max-w-xl">
+              md:max-w-xl lg:max-w-xl xl:max-w-xl">
         <div class="w-full flex flex-col px-3 py-6 items-center justify-center">
               <p class="text-sm text-left text-dark-900 dark:text-white">
                 By clicking on the buttons below, I certify that: <br/> <br/>
@@ -107,6 +108,7 @@ of Simple CSS Waves-->
                           focus:outline-none focus:ring-blue-300 font-medium rounded-lg
                           text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700
                           dark:focus:ring-blue-800 px-6"
+                        style="background:#2c5995;"
               >Submit</button>
         </div>
 

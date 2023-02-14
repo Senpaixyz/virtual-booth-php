@@ -2,7 +2,7 @@
     <div class="container-xxl flex flex-wrap items-center justify-end md:justify-between lg:justify-between xl:justify-between mx-auto">
  
         <div class="flex md:order-2 justify-between w-full md:justify-end md:w-auto">
-            <p class="text-xs text-gray-900 dark:text-gray-300 mr-3">Back to PLAS-PSH 2023 Main Hall</p>
+            <p class="text-xs text-gray-900 dark:text-gray-300 mx-2">Back to PLAS-PSH 2023 Main Hall</p>
  
             <div class="flex flex-row ">
 

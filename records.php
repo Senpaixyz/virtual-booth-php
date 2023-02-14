@@ -51,7 +51,7 @@
                             PRC#
                         </th>
                         <th scope="col" class="px-2 py-3">
-                            Speciality
+                            Specialty
                         </th>
                         <th scope="col" class="px-2 py-3">
                             I accept all terms & conditions

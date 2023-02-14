@@ -2,7 +2,7 @@
     <div class="container-xxl flex flex-wrap items-center justify-end md:justify-start lg:justify-between xl:justify-between mx-auto">
         <a href="<?= getParentUrl() ?>/virtual-booth" 
         class="flex items-center   
-        fixed md:static lg:static xl:static
+        fixed md:static lg:static xl:static 
         invisible md:visible lg:visible xl:visible">
             <img src="./assets/images/logo/white-Here-Comes-the-Power-Logo.png" class="w-72 mt-3  lg:w-72 xl:w-72  mx-1 here-comes-power-logo"/>
             <!-- <img src="./assets/images/logo/Here-Comes-the-Power-Logo.png" class="w-72 mt-3  lg:w-72 xl:w-72  mx-1 block dark:hidden"/> -->
@@ -105,7 +105,7 @@
       
             <ul class="visible md:invisible lg:invisible xl:invisible flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-800 dark:border-gray-800">
                 <li>
-                    <a href="javascript:void(0)"  class="modal-button block py-2 pl-3 pr-4 text-white  rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">VIRTUAL BOOTH</a>
+                    <a href="javascript:void(0)"  class="modal-button block py-2 pl-3 pr-4 text-gray-700  rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">VIRTUAL BOOTH</a>
                 </li>
                 <li>
                     <a  href="javascript:void(0)" data-target="#panel-modal" class="modal-button block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">PANELS</a>

@@ -79,7 +79,7 @@
                             <a href="javascript:void(0)">
                                 <img 
                                 src="./assets/images/panels/Mistacor 4x8 ft FA 021223.jpg" 
-                                class="h-auto panel-images-sm panel-images-sm-md transition-all duration-300 cursor-pointer"    
+                                class="h-auto panel-images-sm panel-images-sm-md transition-all duration-300 cursor-pointer  show-r-logo"    
                                 /> 
                             </a>
                         </div>
@@ -180,38 +180,64 @@
 <div id="panel-solo-modal" class="modal-large   p-4 overflow-x-hidden ">
         
      
-        <a href="javascript:void(0)" >
+        <a href="javascript:void(0)"  class="invisible md:visible lg:visible xl:visible" >
     
                 <!-- DESKTOP VIEW -->
-                <img 
-                id=""
-                src="./assets/images/panels/Valcamp 4x8 ft 021223.jpg" 
-                class="panel-images-lg panel-image-large panel-images-large-lg-xl transition-all duration-300 cursor-pointer invisible lg:visible  xl:visible"  
-                style="position:absolute;top:10%;left:15%;"
-                />
+                <div >
+                    <div class="position:relative;">
+                        <button class="text-white font-bold py-2 px-4 rounded close-panel-image"
+                        style="position:absolute;top:1rem;right:6rem;z-index:9999;">
+                        &times;
+                        </button>
+                        <img 
+                        id=""
+                        src="./assets/images/panels/Valcamp 4x8 ft 021223.jpg" 
+                        class="panel-images-lg panel-image-large panel-images-large-lg-xl transition-all duration-300 cursor-pointer invisible lg:visible  xl:visible"  
+                        style=""
+                        />
+                        <img src="./assets/images/logo/PLAS_PSH letters R.jpeg" 
+                        class="w-10 mx-1 missing-r-logo" 
+                        style="z-index:9999;display:none;"/>
+                    </div>
+                
+                </div>
+       
                 <!-- MOBILE VIEW -->
 
           </a>
-            <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded close-panel-image">
-            &times;
-            </button>
-          <a href="javascript:void(0)" >
+
+          <a href="javascript:void(0)" class="visible md:invisible lg:invisible xl:invisible" >
                     <!-- MOBILE VIEW -->
-                    <img 
-                    id=""
-                    src="./assets/images/panels/Valcamp 4x8 ft 021223.jpg" 
-                    class="panel-images-lg panel-image-large panel-images-large-sm-md transition-all duration-300 cursor-pointer visible lg:invisible xl:invisible"  
-                    style="position:absolute;top:5rem;bottom:0;z-index:999;"
-                    />
+
+                    <div >
+                    <div class="position:relative;">
+ 
+                        <button class="text-white font-bold py-2 px-4 rounded close-panel-image"
+                        style="position:absolute;top:5.2rem;right:0.75rem;z-index:9999;">
+                        &times;
+                        </button>
+                        <img 
+                        id=""
+                        src="./assets/images/panels/Valcamp 4x8 ft 021223.jpg" 
+                        class="panel-images-lg panel-image-large panel-images-large-sm-md transition-all duration-300 cursor-pointer visible lg:invisible xl:invisible"  
+                        style="position:absolute;right:0.25rem;top:5rem;z-index:999;"
+                        />
+                        <img src="./assets/images/logo/PLAS_PSH letters R.jpeg" 
+                        class="w-10 mx-1 missing-r-logo" 
+                        style="position:absolute;bottom:0.3rem;left:0.75rem;z-index:9999;display:none;"/>
+               
+                    </div>
+                    </div>
+
+
+         
             </a>
+         
 
             
 
 </div>
  
-<img src="./assets/images/logo/PLAS_PSH letters R.jpeg" 
-class="w-10 mx-1 missing-r-logo" 
-style="position:fixed;left:1rem;bottom:3rem;z-index:9999;display:none;"/>
 
 <!-- VIDEO -->
 
@@ -268,7 +294,7 @@ style="position:fixed;left:1rem;bottom:3rem;z-index:9999;display:none;"/>
                             PRC#
                         </th>
                         <th scope="col" class="px-2 py-3">
-                            Speciality
+                           Specialty
                         </th>
                         <th scope="col" class="px-2 py-3">
                             I accept all terms & conditions

@@ -2,6 +2,7 @@ var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
 var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
 
 var imageSource = $(".here-comes-power-logo");
+var sandozSource = $(".sandoz-logo-source");
 
 console.log('Image Source: ', imageSource);
 
@@ -12,6 +13,7 @@ if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localS
     
     if(imageSource){
         imageSource.attr('src','./assets/images/logo/white-Here-Comes-the-Power-Logo.png');
+        sandozSource.attr('src','./assets/images/logo/Sandoz-Logo-NEW-WHITE.png');
     }
 
     if (window.tidioChatApi) {
@@ -23,6 +25,7 @@ if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localS
 
     if(imageSource){
         imageSource.attr('src','./assets/images/logo/Here-Comes-the-Power-Logo.png');
+        sandozSource.attr('src','./assets/images/logo/Sandoz-Logo-NEW-BLUE.png');
     }
 
 
@@ -47,6 +50,7 @@ themeToggleBtn.addEventListener('click', function() {
 
             if(imageSource){
                 imageSource.attr('src','./assets/images/logo/white-Here-Comes-the-Power-Logo.png');
+                sandozSource.attr('src','./assets/images/logo/Sandoz-Logo-NEW-WHITE.png');
             }
 
             if (window.tidioChatApi) {
@@ -59,6 +63,7 @@ themeToggleBtn.addEventListener('click', function() {
 
             if(imageSource){
                 imageSource.attr('src','./assets/images/logo/Here-Comes-the-Power-Logo.png');
+                sandozSource.attr('src','./assets/images/logo/Sandoz-Logo-NEW-BLUE.png');
             }
 
             if (window.tidioChatApi) {
@@ -85,6 +90,7 @@ themeToggleBtn.addEventListener('click', function() {
 
             if(imageSource){
                 imageSource.attr('src','./assets/images/logo/white-Here-Comes-the-Power-Logo.png');
+                sandozSource.attr('src','./assets/images/logo/Sandoz-Logo-NEW-BLUE.png.png');
             }
 
             if (window.tidioChatApi) {

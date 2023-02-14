@@ -53,7 +53,9 @@
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); */
   overflow: hidden;
 }
-@media only screen and (max-device-width: 768px) {
+/* @media only screen and (max-device-width: 768px) { */
+  /* @media only screen and (max-aspect-ratio: 1/1){ */
+@media only screen and (max-device-width: 768px) { 
   .modal-large{
     max-width: 75vw;
     height: 100vh;

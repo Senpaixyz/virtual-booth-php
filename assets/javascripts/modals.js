@@ -49,12 +49,13 @@ $(document).on('click','.panel-images-sm',function(){
       $("#panel-solo-modal.modal-large").addClass('visible');
 
       const isShowR = $(this).hasClass('show-r-logo');
-
+      console.log($(this));
       if(isShowR){
         console.log('SHOWING  R')
         $(".missing-r-logo").show();
       }
       else{
+        console.log('Hiding R');
         $(".missing-r-logo").hide();
       }
       $("body").find(".modal").removeClass("visible");

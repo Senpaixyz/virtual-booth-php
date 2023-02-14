@@ -1,7 +1,7 @@
 
 <div class="bg-white container-xl px-6 pt-4 dark:bg-gray-800">
         <div class="container flex flex-wrap  items-start justify-center md:justify-between lg:justify-between xl:justify-between">
-        <img src="assets/images/logo/Sandoz-Logo-NEW-BLUE.png" width="200"/>
+        <img src="assets/images/logo/Sandoz-Logo-NEW-BLUE.png" class="sandoz-logo-source" width="200"/>
         </div>    
 </div>
 <footer class=" p-4 bg-white shadow md:p-6 dark:bg-gray-800">
