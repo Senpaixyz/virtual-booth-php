@@ -62,6 +62,7 @@ $(document).on('click','.panel-images-sm',function(){
 
 
 $(document).on('click','.close-panel-image',function(){
+  console.log('Close Button Click Success')
   keyshotxrID.find('#backbuffer').removeClass('blurd-background-filter');
   $("#panel-solo-video-modal.modal-video-large").html(''); // empty video player;;
   $("body").find(".modal-large").removeClass("visible");

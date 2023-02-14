@@ -8,10 +8,15 @@ require_once 'auth-middleware.php';
             href="./assets/stylesheets/style.css"
             rel="stylesheet"
     />
+    
 <div class="container:2xl  mx-auto virtual-booth-parent">
     <?php include 'views/modals.php';?>
     <div id="KeyShotXR" class="mx-auto  backdrop-blur-sm "></div>
 </div>
+
+
+<script src="assets/javascripts/modals.js"></script>
+
 
 <div class="container  flex flex-col mx-auto visible md:invisible lg:invisible xl:invisible  static md:fixed lg:fixed xl:fixed">
         <div class="my-3 text-left " id="sandoz-corp-video">
@@ -34,7 +39,7 @@ require_once 'auth-middleware.php';
 <?php include 'views/booth-script-init.php';?>
 
 
-<script src="assets/javascripts/modals.js"></script>
+
 
 
 <?php include 'views/auth-footer.php';?>
