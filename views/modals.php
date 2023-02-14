@@ -197,7 +197,7 @@
                         />
                         <img src="./assets/images/logo/PLAS_PSH letters R.jpeg" 
                         class="w-10 mx-1 missing-r-logo" 
-                        style="z-index:9999;display:none;"/>
+                        style="margin-top: -2.7rem;margin-left:-1rem;z-index:9999;display:none;"/>
                     </div>
                 
                 </div>

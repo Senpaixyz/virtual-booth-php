@@ -56,17 +56,17 @@ class JwtAuth
 
         $expectedSignature = hash_hmac('sha256', "$headerEncoded.$payloadEncoded", $secretKey, true);
 
-        if ($signature !== $expectedSignature) {
-            // throw new Exception('Invalid signature');
-            header('Location: '.getParentUrl());  
-            exit;
-        }
+        // if ($signature !== $expectedSignature) {
+        //     // throw new Exception('Invalid signature');
+        //     header('Location: '.getParentUrl());  
+        //     exit;
+        // }
 
-        if (time() > $payload['exp']) {
-            // throw new Exception('Token has expired');
-            header('Location: '.getParentUrl());  
-            exit;
-        }
+        // if (time() > $payload['exp']) {
+        //     // throw new Exception('Token has expired');
+        //     header('Location: '.getParentUrl());  
+        //     exit;
+        // }
 
         return $payload;
     }

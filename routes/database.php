@@ -13,7 +13,7 @@ function get_records($table,$cred) {
         die("Connection failed: " . mysqli_connect_error());
     }
 
-    $query = "SELECT * FROM $table ORDER BY created_at DESC";
+    $query = "SELECT * FROM $table WHERE DATE(created_at) = CURDATE() ORDER BY created_at DESC";
     $result = mysqli_query($conn, $query);
     $data = array();
     while ($row = $result->fetch_assoc()) {

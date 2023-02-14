@@ -61,7 +61,16 @@ $updateVersion = "?v=".rand();
 
                 
             }
-            
+            else{
+                var windowWidth = $(window).width();
+                $(window).on("resize", function() {
+                    console.log('window on r esize')
+                if ($(window).width() != windowWidth) {
+                    location.reload();
+                }
+                });
+            }
+
         }
         orientationChange();
         });

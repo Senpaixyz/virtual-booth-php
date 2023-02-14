@@ -44,10 +44,10 @@ else{
 }
 
 
-if($redirect){
-  header('Location: '.getParentUrl());  
-  exit;
-}
+// if($redirect){
+//   header('Location: '.getParentUrl());  
+//   exit;
+// }
 
 
 ?>
