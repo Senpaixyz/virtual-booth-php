@@ -105,13 +105,17 @@
                         </div>
                         <div class="swiper-slide">
                                 <a href="javascript:void(0)" class="position:relative;">
-                                    <img src="./assets/images/logo/PLAS_PSH letters R.jpeg" 
-                                    class="w-5 mx-1" 
-                                    style="position:absolute;margin-top:180px;z-index:99999;"/>
-                                    <img 
-                                    src="./assets/images/panels/Wosulin 4x8 ft FA 021423.jpg" 
-                                    class="h-auto panel-images-sm panel-images-sm-md transition-all duration-300 cursor-pointer"   
-                                    /> 
+                                    <div class="position:relative;">
+                                        <img src="./assets/images/logo/PLAS_PSH letters R.jpeg" 
+                                        class="w-5 mx-1" 
+                                        style="position:absolute;top:185px;left:-5px; z-index:99999;"/>
+                                        <img 
+                                        src="./assets/images/panels/Wosulin 4x8 ft FA 021423.jpg" 
+                                        class="h-auto panel-images-sm panel-images-sm-md transition-all duration-300 cursor-pointer"   
+                                        /> 
+                                   
+                                    </div>
+                      
                                 </a> 
                         </div>
 
