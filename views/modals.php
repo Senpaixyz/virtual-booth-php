@@ -104,7 +104,10 @@
                                 </a> 
                         </div>
                         <div class="swiper-slide">
-                                <a href="javascript:void(0)">
+                                <a href="javascript:void(0)" class="position:relative;">
+                                    <img src="./assets/images/logo/PLAS_PSH letters R.jpeg" 
+                                    class="w-5 mx-1" 
+                                    style="position:absolute;top:230px;left:-8px;z-index:99999;"/>
                                     <img 
                                     src="./assets/images/panels/Wosulin 4x8 ft FA 021423.jpg" 
                                     class="h-auto panel-images-sm panel-images-sm-md transition-all duration-300 cursor-pointer"   
@@ -160,8 +163,8 @@
         <!-- DESKTOP -->
         <div class="gap-4 flex flex-row  justify-between invisible lg:visible  xl:visible " style="position:absolute;width:100%;">
             <img src="./assets/images/logo/PLAS_PSH letters R.jpeg" 
-                        class="w-10 mx-1 missing-r-logo" 
-                        style="position:absolute;top:25%;left:20%;z-index:99999;"/>
+                        class="w-10 mx-1" 
+                        style="position:absolute;top:83%;right:14%;z-index:99999;"/>
             <a href="javascript:void(0)" >
                 <img 
                 src="./assets/images/panels/Valcamp 4x8 ft 021223.jpg" 
