@@ -16,7 +16,7 @@
         <ul class="flex flex-wrap items-center  mt-3 text-sm text-gray-500 dark:text-gray-400 ">
 
             <li>
-                <a href="#" class="hover:underline ">PROMAT CODE</a>
+                <a href="#" class="hover:underline ">PH2302140461.15FEB2023.EXP17FEB2023</a>
             </li>
         </ul>
     </div>
