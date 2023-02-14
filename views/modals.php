@@ -107,7 +107,7 @@
                                 <a href="javascript:void(0)" class="position:relative;">
                                     <img src="./assets/images/logo/PLAS_PSH letters R.jpeg" 
                                     class="w-5 mx-1" 
-                                    style="position:absolute;top:230px;left:-8px;z-index:99999;"/>
+                                    style="position:absolute;margin-top:180px;z-index:99999;"/>
                                     <img 
                                     src="./assets/images/panels/Wosulin 4x8 ft FA 021423.jpg" 
                                     class="h-auto panel-images-sm panel-images-sm-md transition-all duration-300 cursor-pointer"   
@@ -270,14 +270,14 @@
         <div class="gap-4 flex flex-row justify-between" style="position:absolute;width:100%;">
             <a href="javascript:void(0)" >
                 <img 
-                src="./assets/images/thumbnails/thumbnail-01.jpg" 
+                src="./assets/images/thumbnails/thumbnail-011.jpg" 
                 data-content="./assets/videos/LGB wSEC.mp4"
                 class="h-auto panel-videos-sm panel-videos-sm-md transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"  
                 /> 
             </a>
             <a href="javascript:void(0)">
                 <img 
-                src="./assets/images/thumbnails/thumbnail-02.jpg" 
+                src="./assets/images/thumbnails/thumbnail-022.jpg" 
                 data-content="./assets/videos/MISTACOR MAIN AVP MASTER 120222.mp4"
                 class="h-auto panel-videos-sm panel-videos-sm-md transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"    
                 /> 
