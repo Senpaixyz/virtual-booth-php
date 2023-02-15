@@ -8,7 +8,6 @@
 <script src="./assets/javascripts/chatbot.js<?=$updateVersion?>" async></script>
 
 <!-- <script src="//code.tidio.co/fewor8budcej77h3dwmhohvszuxuewd4.js" async></script>  -->
-<script src="//code.tidio.co/eywpoybfrjcpjx74jjsuybgeqtobw4c1.js" async></script>
 
 
 <!-- <script src="https://cdn.tailwindcss.com"></script>
