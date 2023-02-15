@@ -8,8 +8,11 @@ require_once 'auth-middleware.php';
             href="./assets/stylesheets/style.css<?=$updateVersion?>"
             rel="stylesheet"
     />
-    
+<img src="./assets/images/logo/PLAS_PSH letters R.jpeg" 
+        class="w-10 md:w-16 lg:w-16 xl:w-16 mx-1" 
+        style="position:fixed;left:-0.5rem;top:50%;z-index:9999;"/> 
 <div class="container:2xl  mx-auto virtual-booth-parent">
+    
     <?php include 'views/modals.php';?>
     <div id="KeyShotXR" class="mx-auto  backdrop-blur-sm "></div>
 </div>
