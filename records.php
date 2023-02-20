@@ -1,3 +1,4 @@
+<?php include 'uncache-header.php'; ?>
 <?php include 'views/header.php';?>
 <?php include 'views/not-auth-navbar.php';?>
 
