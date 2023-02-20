@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   //     'db'        => "virtual-booth"
   // ];
 
-  $records = get_records("users",$credentials,$email);
+  $records = get_records("users",$credentials);
 
   echo json_encode([
     'status'    => 'success',

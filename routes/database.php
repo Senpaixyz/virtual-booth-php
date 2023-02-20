@@ -3,6 +3,8 @@
 function get_records($table,$cred) {
     $credentials = (object)$cred;
 
+
+
     $conn = mysqli_connect(
         $credentials->host,
         $credentials->user,
@@ -13,7 +15,15 @@ function get_records($table,$cred) {
         die("Connection failed: " . mysqli_connect_error());
     }
 
-    $query = "SELECT * FROM $table WHERE DATE(created_at) = CURDATE() ORDER BY created_at DESC";
+    if(isset($_GET['date'])){
+        $date = $_GET['date'];
+        $query = "SELECT * FROM $table WHERE DATE(created_at) = '$date' ORDER BY created_at DESC";
+    }
+    else{
+        $query = "SELECT * FROM $table WHERE DATE(created_at) = CURDATE() ORDER BY created_at DESC";
+    }
+
+
     $result = mysqli_query($conn, $query);
     $data = array();
     while ($row = $result->fetch_assoc()) {
@@ -89,20 +99,6 @@ function update_record($table,$cred, $email, $data) {
     return mysqli_query($conn, $query);
 }
 
-function delete_record($table,$cred, $id) {
-    $credentials = (object)$cred;
 
-    $conn = mysqli_connect(
-        $credentials->host,
-        $credentials->user,
-        $credentials->password,
-        $credentials->db
-    );
-    if (!$conn) {
-        die("Connection failed: " . mysqli_connect_error());
-    }
-    $query = "DELETE FROM $table WHERE id='$id'";
-    return mysqli_query($conn, $query);
-}
 ?>
 

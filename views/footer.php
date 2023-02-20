@@ -5,7 +5,6 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
 <script src="./assets/javascripts/theme-toggle.js<?=$updateVersion?>"></script>
-<script src="./assets/javascripts/chatbot.js<?=$updateVersion?>" async></script>
 
 <!-- <script src="//code.tidio.co/fewor8budcej77h3dwmhohvszuxuewd4.js" async></script>  -->
 

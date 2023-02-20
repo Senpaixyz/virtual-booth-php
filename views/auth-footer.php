@@ -24,4 +24,5 @@
 
 
 <?php include 'footer.php';?>
+<script src="./assets/javascripts/chatbot.js<?=$updateVersion?>" async></script>
 <script src="//code.tidio.co/eywpoybfrjcpjx74jjsuybgeqtobw4c1.js" async></script>

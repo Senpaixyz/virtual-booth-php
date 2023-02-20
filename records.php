@@ -34,6 +34,7 @@
             numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
             optio, eaque rerum! Provident similique accusantium nemo autem.
             </h1>
+  
             <table id="table-records" class="w-full text-sm text-left text-gray-500 dark:text-gray-400 display nowrap my-5"  cellspacing="0" width="100%">
 
                 <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
@@ -100,7 +101,7 @@
 <script src="https://cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
 <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/datepicker.min.js"></script>
 <script>
 $(document).ready( function() {
     $('#table-records').DataTable( {
@@ -114,6 +115,9 @@ $(document).ready( function() {
             }
         } ]
     } );
+
+
+
 } );
 </script>
 
